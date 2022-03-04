@@ -1,0 +1,184 @@
+html {
+  box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --fonts: Helvetica, Arial, sans-serif;
+  --color-white: #eee;
+  --color-accent: #aa6;
+  --color-accent-dark: #663;
+  --color-accent-light: #cc8;
+}
+
+body {
+  font-family: var(--fonts);
+  font-size: 16px;
+  margin: 0 auto;
+  max-width: 600px;
+  padding: 1rem;
+}
+
+h1,
+h2,
+h3 {
+  margin-bottom: 1rem;
+}
+
+a {
+  color: var(--color-accent-dark);
+}
+
+section {
+  margin-bottom: 1rem;
+}
+
+/** FORM **/
+
+.form {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+}
+
+.field {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  width: 100%;
+}
+
+.field label {
+  font-size: 1rem;
+}
+
+.field input,
+.field textarea {
+  border: 1px solid var(--color-accent);
+  border-radius: 3px;
+  flex: 1;
+  padding: 8px;
+  width: 100%;
+}
+
+.field--textarea {
+  align-items: flex-start;
+}
+
+.field textarea {
+  flex: 1;
+  min-height: 6rem;
+}
+
+.field--invalid input,
+.field--invalid textarea {
+  background-color: var(--color-accent-light);
+  border-color: var(--color-accent);
+}
+
+.button {
+  background-color: var(--color-accent);
+  border: 1px solid #fff;
+  border-radius: 8px;
+  max-width: 300px;
+  padding: 0.5rem;
+  transition: background-color ease-in 200ms, color ease-in 200ms;
+  width: 100%;
+}
+
+.button:hover {
+  background-color: var(--color-accent-dark);
+  color: var(--color-white);
+}
+
+.button--margin {
+  margin-top: 1rem;
+}
+
+.button--large {
+  font-size: 2rem;
+}
+
+.errors {
+  margin-bottom: 2rem;
+  margin-top: 1rem;
+}
+
+.errors__title {
+  font-size: 1rem;
+  margin-top: 1rem;
+}
+
+/** VIÐBURÐIR **/
+
+.events {
+  margin-bottom: 2rem;
+}
+
+.events__event {
+  margin-bottom: 1rem;
+}
+
+.events__eventLink {
+  font-weight: bold;
+}
+
+.events__eventDescription {
+  display: block;
+  font-style: italic;
+}
+
+/** VIÐBURÐUR **/
+.event__info,
+.event__registered {
+  margin-bottom: 2rem;
+}
+
+.event__title {
+  font-size: 2rem;
+}
+
+.event__subtitle {
+  font-size: 1.5rem;
+}
+
+.event__registeredItem {
+  margin-bottom: 1rem;
+}
+
+.event__registeredName {
+  font-weight: bold;
+}
+
+.event__registeredComment {
+  display: block;
+  font-style: italic;
+}
+
+/** LINKUR **/
+.link {
+  border-top: 1px solid var(--color-accent-dark);
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+/** USER **/
+
+.user {
+  border-top: 1px solid var(--color-accent-dark);
+  display: flex;
+  flex-direction: column;
+  margin-top: 3rem;
+  padding-top: 1rem;
+}
+
+.user__loggedin {
+  margin-bottom: 0.5rem;
+}
