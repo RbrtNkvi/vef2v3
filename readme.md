@@ -1,13 +1,7 @@
-# Vef2 2022, verkefni 2 sýnilausn
+# Vef2 2022, verkefni 3
 
-Sýnilausn á [verkefni 2](https://github.com/vefforritun/vef2-2022-v2).
+username: admin, password: 123
 
-```bash
-createdb vef2-2022-v2
-createdb vef2-2022-v2-test
-# setja upp .env & .env.test með tengingu í gagnagrunna
-npm install
-npm run test
-npm run setup
-npm start # eða `npm run dev`
-```
+## curl
+`curl https://rng1-vef2v3.herokuapp.com/events` til að 'getta' events síðuna.
+`curl -X POST https://rng1-vef2v3.herokuapp.com/events` til að 'posta' á events síðuna.
